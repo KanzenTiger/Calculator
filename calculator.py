@@ -33,5 +33,5 @@ try:#если нет типого исключения
         print(calculator.calculating_U)
     else:
         print("Вы ввели, неверную операцию.")
-except ValueError:#еслиесть исключение типовое
+except ValueError:#если есть исключение типовое
     print("Ошибка, вы ввели слово")
