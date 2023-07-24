@@ -1,4 +1,4 @@
-d = str(input("Введите действие, которое хотите совершить из ниже пеоечисленны, \n +, -, /, *"))
+d = str(input("Введите действие, которое хотите совершить из ниже пеоечисленны, \n +, -, /, *, "))
 try:#если нет типого исключения
     a = float(input("Введите число: "))
     b = float(input("Введите число: "))
@@ -23,6 +23,15 @@ try:#если нет типого исключения
             c = alpha * beta
             return c
     calculator = Calculator(a, b)
-    #print(calculator.)
-except ValueError:#если есть исключение типовое
+    if d == "+":
+        print(calculator.calculating_P)
+    elif d == "-":
+        print(calculator.calculating_M)
+    elif d == "/":
+        print(calculator.calculating_R)
+    elif d == "*":
+        print(calculator.calculating_U)
+    else:
+        print("Вы ввели, неверную операцию.")
+except ValueError:#еслиесть исключение типовое
     print("Ошибка, вы ввели слово")
